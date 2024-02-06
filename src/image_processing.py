@@ -1,9 +1,6 @@
 import cv2
 import matplotlib.pyplot as plt
 
-def read_img(path_to_img):
-   return cv2.imread(path_to_img)
-
 def showByCv2(image):
     cv2.imshow('Image', image)
     cv2.waitKey(0)
@@ -19,4 +16,4 @@ def splitByChannels(image):
     return [b, g, r]
 
 def conversionByColorModel(image, model):
-    return cv2.cvtColor(image, model)
+    return cv2.cvtColor(image, mo)

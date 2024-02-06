@@ -2,7 +2,7 @@ from src import image_processing as img_proc
 import cv2
 
 if __name__ == "__main__":
-    input_image = img_proc.read_img('assets/pepe.png')
+    input_image = cv2.imread('assets/pepe.png')
 
     img_proc.showByCv2(input_image)
     img_proc.showByPlt(input_image)
